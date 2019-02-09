@@ -1,0 +1,299 @@
+/*Phone Styles */
+@media only screen and (min-width: 0px) {
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 25px;
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 25px;
+    }
+
+    .title {
+        width: 100%;
+        /* width: 100px; */
+        position: relative;
+        z-index: -3;
+        text-align: center;
+        justify-content: center;
+        top: 10px;
+    }
+
+    .logo {
+        width: 75%;
+        height: auto;
+    }
+
+    .pipe-container {
+        width: 75px;
+        height: 180px;
+        position: relative;
+        /* border: 10px solid black; */
+        overflow: hidden;
+        bottom: 45px;
+        transition: 1s;
+
+    }
+
+    .mario-in-pipe {
+        width: 80%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        top: 100px;
+        left: 9px;
+        transition: 1s;
+        /* top: 0px; */
+    }
+
+
+    .luigi-in-pipe {
+        width: 73%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        top: 100px;
+        left: 14px;
+        transition: 1s;
+        /* top: 0px; */
+    }
+
+    .peach-in-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        top: 122px;
+        transition: 1s;
+        left: 3px;
+        /* top: 0px; */
+    }
+
+    .yoshi-in-pipe {
+        width: 80%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        top: 122px;
+        left: 10px;
+        transition: 1s;
+        /* top: 10px; */
+    }
+
+    .mario-warp-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 50px;
+        transition: 1s;
+        z-index: 2;
+
+    }
+
+    .luigi-warp-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 17px;
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .peach-warp-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 48px;
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .yoshi-warp-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 5px;
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .pipe-container:hover>.mario-in-pipe {
+        top: 0px;
+        transition: .5s;
+    }
+
+    .pipe-container:hover>.luigi-in-pipe {
+        top: 0px;
+        transition: .5s;
+    }
+
+    .pipe-container:hover>.peach-in-pipe {
+        top: 0px;
+        transition: .5s;
+    }
+
+    .pipe-container:hover>.yoshi-in-pipe {
+        top: 10px;
+        transition: .5s;
+    }
+
+}
+
+/*Tablet Styles */
+@media only screen and (min-width: 600px) {
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .nav-bar-background {
+        height: 220px;
+        width: 100%;
+        background-color: red;
+        position: absolute;
+        z-index: -3;
+    }
+
+    .title {
+        width: 100%;
+        /* width: 100px; */
+        position: relative;
+        z-index: -2;
+        text-align: center;
+        justify-content: center;
+        top: 10px;
+    }
+
+    .logo {
+        width: 75%;
+        height: auto;
+
+    }
+
+    .pipe-container {
+        width: 120px;
+        height: 300px;
+        position: relative;
+        /* border: 10px solid blue; */
+        overflow: hidden;
+        bottom: 80px;
+        transition: 1s;
+    }
+
+    .mario-in-pipe {
+        width: 80%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        top: 173px;
+        left: 9px;
+        /* top: 0px; */
+        transition: 1s;
+    }
+
+
+    .luigi-in-pipe {
+        width: 73%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        top: 160px;
+        left: 14px;
+        transition: 1s;
+        /* top: 0px; */
+    }
+
+    .peach-in-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        top: 150px;
+        transition: 1s;
+        left: 6px;
+        /* top: 0px; */
+    }
+
+    .yoshi-in-pipe {
+        width: 80%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        top: 150px;
+        left: 10px;
+        transition: 1s;
+        /* top: 15px; */
+    }
+
+    .mario-warp-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 60px;
+        transition: 1s;
+        z-index: 2;
+        /* transition: 1s; */
+    }
+
+    .luigi-warp-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 9px;
+        transition: 1s;
+        z-index: 2;
+        /* transition: 1s; */
+    }
+
+    .peach-warp-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 56px;
+        z-index: 2;
+        /* transition: 1s; */
+    }
+
+    .yoshi-warp-pipe {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 10px;
+        transition: 1s;
+        z-index: 2;
+        /* transition: 1s; */
+    }
+
+    .pipe-container:hover>.mario-in-pipe {
+        top: 0px;
+        transition: .5s;
+    }
+
+    .pipe-container:hover>.luigi-in-pipe {
+        top: 0px;
+        transition: .5s;
+    }
+
+    .pipe-container:hover>.peach-in-pipe {
+        top: 0px;
+        transition: .5s;
+    }
+
+    .pipe-container:hover>.yoshi-in-pipe {
+        top: 15px;
+        transition: .5s;
+    }
+}

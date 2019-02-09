@@ -1,32 +1,269 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: SuperMario256;
+  src: url("SuperMario256 2.ttf");
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Phone Styles */
+@media only screen and (max-width: 799px) {
+  .title-container-large {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title-container-small {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    background: red;
+    padding-bottom: 1px;
+  }
+
+  .title-small {
+    font-family: SuperMario256;
+    font-size: 5vh;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+    bottom: 15px;
+    height: 100px;
+    background: red;
+  }
+
+  .pipe-container {
+    width: 150px;
+    height: 227px;
+    position: relative;
+    -webkit-transition: 1s;
+    overflow: hidden;
+    transition: 1s;
+    bottom: 127px;
+  }
+
+  .mario-in-pipe {
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 125px;
+    /* -webkit-transition: 1s; */
+    /* transition: 1s; */
+    /* display: none; */
+    /*top: 0px; */
+  }
+
+  .mario-warp-pipe {
+    width: 100%;
+    height: 115px;
+    position: relative;
+    z-index: 2;
+    top: 113px;
+  }
+
+  .luigi-in-pipe {
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    left: 21px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    top: 125px;
+  }
+
+  .luigi-warp-pipe {
+    width: 100%;
+    height: 115px;
+    position: relative;
+    z-index: 2;
+    top: 113px;
+  }
+
+  .peach-in-pipe {
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    top: 125px;
+  }
+
+  .peach-warp-pipe {
+    width: 100%;
+    height: 115px;
+    position: relative;
+    z-index: 2;
+    top: 113px;
+  }
+
+  .yoshi-in-pipe {
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    top: 125px;
+  }
+
+  .yoshi-warp-pipe {
+    width: 100%;
+    height: 115px;
+    position: relative;
+    z-index: 2;
+    top: 113px;
+  }
+
+  .pipe-container:hover > .mario-in-pipe {
+    top: 0px;
+    transition: 0.5s;
+  }
+
+  .pipe-container:hover > .luigi-in-pipe {
+    top: 0px;
+    transition: 0.5s;
+  }
+
+  .pipe-container:hover > .peach-in-pipe {
+    top: 0px;
+    transition: 0.5s;
+  }
+
+  .pipe-container:hover > .yoshi-in-pipe {
+    top: 0px;
+    transition: 0.5s;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 800px) {
+  .title-container-small {
+    display: none;
+  }
+
+  .title-large {
+    font-family: SuperMario256;
+    font-size: 7vh;
+  }
+
+  .title-container-large {
+    text-align: center;
+    margin-bottom: -44px;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    background: red;
+  }
+
+  .pipe-container {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+
+  .mario-in-pipe {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 137px;
+    transition: 1s;
+  }
+
+  .luigi-in-pipe {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 25px;
+    top: 137px;
+    transition: 1s;
+  }
+
+  .peach-in-pipe {
+    width: 88%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 137px;
+    transition: 1s;
+  }
+
+  .yoshi-in-pipe {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 137px;
+    transition: 1s;
+  }
+
+  .mario-warp-pipe {
+    width: 100%;
+    height: 45%;
+    position: relative;
+    top: 119px;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .luigi-warp-pipe {
+    width: 100%;
+    height: 45%;
+    position: relative;
+    top: 119px;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .peach-warp-pipe {
+    width: 100%;
+    height: 45%;
+    position: relative;
+    top: 119px;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .yoshi-warp-pipe {
+    width: 100%;
+    height: 45%;
+    position: relative;
+    top: 119px;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .pipe-container:hover > .mario-in-pipe {
+    top: 0px;
+    transition: 0.5s;
+  }
+
+  .pipe-container:hover > .luigi-in-pipe {
+    top: 0px;
+    transition: 0.5s;
+  }
+
+  .pipe-container:hover > .peach-in-pipe {
+    top: 0px;
+    transition: 0.5s;
+  }
+
+  .pipe-container:hover > .yoshi-in-pipe {
+    top: 0px;
+    transition: 0.5s;
   }
 }
