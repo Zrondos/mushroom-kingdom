@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 import { NavBar } from "./Components/nav_bar";
-import { Pipe } from "./Components/pipe_elements";
+import { ProfilesContainer } from "./Components/ProfilesContainer.jsx";
+// import ProfilePages
 
 class App extends Component {
   render() {
     return (
       <div>
         <NavBar />
-        <h2> Hello world </h2>
+        <ProfilesContainer />
       </div>
     );
   }

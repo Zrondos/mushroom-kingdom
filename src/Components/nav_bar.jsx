@@ -5,7 +5,6 @@ import luigi_jump from "./images/luigi_jump.png";
 import peach_jump from "./images/peach_jump.png";
 import yoshi_jump from "./images/yoshi_jump.png";
 import warp_pipe from "./images/warp_pipe.png";
-import mushroom_kingdom_logo from "./images/mushroom_kingdom_logo.jpeg";
 
 export class NavBar extends React.Component {
   render() {

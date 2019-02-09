@@ -50,7 +50,7 @@
     left: 15px;
     top: 125px;
     /* -webkit-transition: 1s; */
-    /* transition: 1s; */
+    transition: 1s;
     /* display: none; */
     /*top: 0px; */
   }
@@ -122,6 +122,11 @@
     transition: 0.5s;
   }
 
+  .pipe-container:hover > .mario-in-pipe {
+    top: 0px;
+    transition: 0.5s;
+  }
+
   .pipe-container:hover > .luigi-in-pipe {
     top: 0px;
     transition: 0.5s;
@@ -135,6 +140,16 @@
   .pipe-container:hover > .yoshi-in-pipe {
     top: 0px;
     transition: 0.5s;
+  }
+
+  .clicked {
+    /* width: 70%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 15px; */
+    top: 0px;
+    /* transition: 1s; */
   }
 }
 
@@ -265,5 +280,15 @@
   .pipe-container:hover > .yoshi-in-pipe {
     top: 0px;
     transition: 0.5s;
+  }
+
+  .clicked {
+    /* width: 70%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 15px; */
+    top: 0px;
+    /* transition: 1s; */
   }
 }
